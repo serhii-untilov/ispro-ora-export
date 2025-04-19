@@ -1,6 +1,6 @@
 # Export Data from an IS-Pro Database to CSV Files
 
-Download the `ispro-ora-export.sql` file.
+Download the [`ispro-ora-export.sql`](https://github.com/serhii-untilov/ispro-ora-export/blob/master/ispro-ora-export.sql) file.
 
 By default, it will be downloaded to the `C:\Users\username\Downloads` folder.
 
