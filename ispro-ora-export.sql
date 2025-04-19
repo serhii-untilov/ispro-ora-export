@@ -52,7 +52,7 @@ SPOOL OFF;
 
 -- Працівники (hr_employee)
 DEFINE filename = 'hr_employee.csv'
-DEFINE sysste_cd = '1'
+DEFINE sysste_cd = '2'
 SPOOL &outfolder.&sysste_cd..&filename;
 with ste1 as (select max(sysste_rcd) sysste_rcd from /*FIRM_SCHEMA*/&schema_firm..sysste where sysste_cd = /*SYSSTE_CD*/&sysste_cd)
 select
