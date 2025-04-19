@@ -12,7 +12,23 @@ For example:
 DEFINE outfolder = 'C:\Users\<username>\Downloads\csv\'
 ```
 
-Start Oracle SQL*Plus.
+Start Oracle SQL*Plus and pass in it username, password, db name and script.
+
+Example:
+
+``` powershell
+D:\app\<username>\product\11.2.0\dbhome_4\BIN\sqlplus.exe <oracle-username>/<oracle-password>@<DBNAME> @C:\Users\<username>\Downloads\ispro-ora-export.sql
+```
+
+See `sql-plus.cmd`.
+
+or
+
+Start SQL*Plus
+
+``` powershell
+sqlplus.exe
+```
 
 Enter your credentials.
 
