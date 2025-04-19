@@ -18,7 +18,7 @@ Enter your credentials.
 
 In the command prompt, run the `ispro-ora-export.sql` file:
 
-```sqlplus
+``` sqlplus
 SQL> @"C:\Users\username\Downloads\ispro-ora-export.sql";
 ```
 
