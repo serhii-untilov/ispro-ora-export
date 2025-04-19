@@ -5,7 +5,7 @@ DEFINE schema_sys = I711_SYS
 -- каталог для створення csv-файлів, замініть на ваш каталог
 DEFINE outfolder = 'C:\Users\sunti\Projects\ispro-ora-export\csv\'
 
-SET TERMOUT ON
+SET TERMOUT OFF
 SET VERIFY OFF
 
 set COLSEP ';'
@@ -54,7 +54,7 @@ SPOOL OFF;
 DEFINE filename = 'hr_employee.csv'
 DEFINE sysste_cd = '1'
 SPOOL &outfolder.&sysste_cd..&filename;
-with ste1 as (select max(sysste_rcd) sysste_rcd from /*FIRM_SCHEMA*/&schema_firm..sysste where sysste_cd = /*SYSSTE_CD*/'1')
+with ste1 as (select max(sysste_rcd) sysste_rcd from /*FIRM_SCHEMA*/&schema_firm..sysste where sysste_cd = /*SYSSTE_CD*/&sysste_cd)
 select
 	cast(x1.kpu_rcd as varchar(11)) "ID"
 /*
